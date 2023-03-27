@@ -35,7 +35,7 @@
             </ul>
           </div>
           <!-- NAV HAMGURGUER -->
-          <div class="nav-hamburguer" onclick="menuMobile()">
+          <div class="nav-hamburguer lg:hidden" onclick="menuMobile()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-menu-2"
@@ -162,9 +162,10 @@
           </div>
         </div>
       </nav>
-      <div class="header flex flex-col justify-center items-center">
+      <!-- HEADER -->
+      <div class="header pb-16 flex flex-col justify-center items-center">
         <div class="header-information container px-3 mx-auto text-center">
-          <h1 class="text-xl font-bold my-3">
+          <h1 class="text-2xl font-bold my-3">
             DECLARACIÓN RENTA ANUAL Y LA REVISIÓN DE LA DJ ANUAL 2022
           </h1>
           <ul>
@@ -199,10 +200,42 @@
                 He leído y acepto la <span>Política de Privacidad</span>
               </label>
             </div>
+            <button type="submit">Solicitar información</button>
           </form>
         </div>
       </div>
     </header>
+    <main>
+      <h1 class="text-3xl mt-16 text-center px-3 font-bold">
+        Nuestro Servicio
+      </h1>
+      <section class="servicio flex flex-col gap-6 mt-8">
+        <div class="servicio-img px-3">
+          <img src="./assets/img/servicio.jpeg" alt="" />
+        </div>
+        <div class="servicio-information px-3">
+          <h1 class="text-xl font-medium">Declaración de Renta Anual</h1>
+          <p>
+            Nuestro servicio le permite poder cumplir la obligación fiscal de
+            manera confiable optimizando la carga fiscal.
+          </p>
+          <p class="my-3">Optimiza la carga fizcal:</p>
+          <ul class="flex flex-col gap-3">
+            <li>
+              <span class="font-bold">1.</span> El mejor método de aplicación de
+              pérdida tributaria según el rubro de la industria.
+            </li>
+            <li>
+              <span class="font-bold">2.</span> Aplicación correcta y
+              optimización de saldos y adelantos de renta.
+            </li>
+            <li>
+              <span class="font-bold">3.</span> Revisión de gastos deducibles.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
   <!-- Scripts -->
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>

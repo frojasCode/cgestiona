@@ -7,7 +7,7 @@
 }
 
 :root {
-    --celeste: #57BED5;
+    --celeste: #57bed5;
     --texto-secundario: #959596;
     --texto-primario: #424242; 
     --white: #FFFFFF;
@@ -158,4 +158,20 @@ form input[type='checkbox']{
     font-size: 12px;
     margin: 0 auto;
     text-align: center;
+}
+
+form button{
+    background-color: var(--celeste) !important;
+    padding: 8px 16px;
+    margin: 0 auto;
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 16px;
+    width: 100%;
+    outline: none;
+    margin-top: 16px;
+}
+
+form button:hover{
+    box-shadow: 0 4px 8px rgba(87, 190, 213, .4);
 }
