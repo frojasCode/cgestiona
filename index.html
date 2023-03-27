@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGEstiona - Declaración Anual</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav class="w-full fixed top-0 left-0">
+        <div
+          class="nav container mx-auto px-3 flex justify-between items-center"
+        >
+          <!-- NAV LOGO -->
+          <div class="nav-img">
+            <img src="./assets/logo.svg" alt="Logo C Gestiona" />
+          </div>
+          <!-- NAV UL -->
+          <div class="nav-ul hidden lg:block">
+            <ul class="flex items-center gap-8">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#servicio">Servicio</a></li>
+              <li><a href="#requisitos">Requisitos</a></li>
+              <li><a href="#beneficios">Beneficio</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+          <!-- NAV HAMGURGUER -->
+          <div class="nav-hamburguer" onclick="menuMobile()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-menu-2"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
+            </svg>
+          </div>
+          <!-- NAV MENU MOBIOLE -->
+          <div
+            class="nav-menu fixed top-0 left-0 w-full h-screen"
+            id="nav-menu"
+            onclick="menuMobile()"
+          >
+            <div class="nav-menu-header flex justify-between items-center px-3">
+              <div class="nav-menu-header-logo">
+                <img src="./assets/logo.svg" alt="" />
+              </div>
+              <div class="nav-menu-header-close">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-x"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M18 6l-12 12" />
+                  <path d="M6 6l12 12" />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="nav-menu-content h-full flex flex-col items-center gap-8 mt-16"
+            >
+              <ul class="flex flex-col items-center gap-8">
+                <li>
+                  <a href="#inicio">Inicio</a>
+                </li>
+                <li>
+                  <a href="#servicio"> Servicio </a>
+                </li>
+                <li>
+                  <a href="#requisitos">Requisitos</a>
+                </li>
+                <li>
+                  <a href="#beneficios">Beneficio</a>
+                </li>
+                <li>
+                  <a href="#contacto">Contacto</a>
+                </li>
+              </ul>
+              <div
+                class="nav-menu-content-redes flex items-center gap-4 w-2/4 justify-center pt-8"
+              >
+                <div>
+                  <a
+                    href="https://www.instagram.com/cgestionaa/"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-brand-instagram"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                      />
+                      <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                      <path d="M16.5 7.5l0 .01" />
+                    </svg>
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.youtube.com/@cgestiona8447/videos"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-brand-youtube"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
+                      />
+                      <path d="M10 9l5 3l-5 3z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header flex flex-col justify-center items-center">
+        <div class="header-information container px-3 mx-auto text-center">
+          <h1 class="text-xl font-bold my-3">
+            DECLARACIÓN RENTA ANUAL Y LA REVISIÓN DE LA DJ ANUAL 2022
+          </h1>
+          <ul>
+            <li>
+              <span>1.</span> Declara tu impuesto anual de manera confiable.
+            </li>
+            <li><span>2.</span> Optimiza la carga fizcal.</li>
+            <li><span>3.</span> Evita las contingencias tributarias</li>
+          </ul>
+        </div>
+        <div class="header-form container px-5 mx-auto mt-6">
+          <form action="#">
+            <h1 class="text-center text-md font-medium">
+              SOLICITA MÁS INFORMACIÓN
+            </h1>
+            <p class="text-center mb-3">En breve nos contactamos</p>
+            <input type="text" placeholder="Nombre y Apellidos" required />
+            <input type="email" placeholder="Correo electrónico" required />
+            <input type="number" placeholder="Número telefónico" required />
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              placeholder="Déjanos tus dudas"
+            ></textarea>
+            <div class="form-checkbox">
+              <input
+                type="checkbox"
+                name="politicaPrivacidad"
+                id="politicaPrivacidad"
+              />
+              <label for="politicaPrivacidad">
+                He leído y acepto la <span>Política de Privacidad</span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </header>
+  </body>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/menu-mobile.js"></script>
+</html>
