@@ -175,3 +175,13 @@ form button{
 form button:hover{
     box-shadow: 0 4px 8px rgba(87, 190, 213, .4);
 }
+
+.servicio-information button{
+    background-color: var(--celeste) !important;
+    padding: 8px 16px;
+    color: var(--white);
+    font-weight: 400;
+    border-radius: 16px;
+    outline: none;
+    margin-top: 16px;
+}
