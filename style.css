@@ -11,6 +11,7 @@
     --texto-secundario: #959596;
     --texto-primario: #424242; 
     --white: #FFFFFF;
+    --background-plomo: #F7F8F9;
 }
 
 html {
@@ -123,8 +124,6 @@ nav{
 .header-form form{
     padding: 16px;
     border-radius: 16px;
-    /* backdrop-filter: blur(1px);
-    background-color: rgba(255,255,255,.6); */
     background-color: var(--white);
     box-shadow: 0 4px 8px rgba(0,0,0, .3);
 }
@@ -190,4 +189,56 @@ section button{
     width: 20px;
     height: 20px;
     color: var(--celeste);
+}
+
+.parallax{
+    background-image: url('./assets/img/parallax1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: var(--white);
+}
+
+.parallax2{
+    background-image: url('./assets/img/parallax2.jpg');
+}
+
+.parallax2::before{
+    background-color: rgba(0,0,0, .7);
+}
+
+.parallax::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, .8);
+    z-index: 1;
+}
+
+.parallax p,
+.parallax a{
+    position: relative;
+    z-index: 2;
+}
+
+.background-plomo{
+    background-color: var(--background-plomo);
+}
+
+.titulo-subrayado p{
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--celeste);
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.header-form.contacto{
+    color: var(--texto-primario);
 }
