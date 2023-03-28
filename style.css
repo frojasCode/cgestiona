@@ -242,3 +242,21 @@ section button{
 .header-form.contacto{
     color: var(--texto-primario);
 }
+
+.whatsapp{
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    z-index: 999;
+    background-color: #25D366;
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.whatsapp svg{
+    color: var(--white);
+    height: 100%;
+    width: 100%;
+}
