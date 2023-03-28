@@ -176,7 +176,7 @@ form button:hover{
     box-shadow: 0 4px 8px rgba(87, 190, 213, .4);
 }
 
-.servicio-information button{
+section button{
     background-color: var(--celeste) !important;
     padding: 8px 16px;
     color: var(--white);
@@ -184,4 +184,10 @@ form button:hover{
     border-radius: 16px;
     outline: none;
     margin-top: 16px;
+}
+
+.requisitos svg{
+    width: 20px;
+    height: 20px;
+    color: var(--celeste);
 }
