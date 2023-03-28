@@ -18,11 +18,13 @@
     <header>
       <nav class="w-full fixed top-0 left-0">
         <div
-          class="nav container mx-auto px-3 flex justify-between items-center"
+          class="nav container mx-auto px-3 sm:px-8 flex justify-between items-center"
         >
           <!-- NAV LOGO -->
           <div class="nav-img">
-            <img src="./assets/logo.svg" alt="Logo C Gestiona" />
+            <a href="#inicio">
+              <img src="./assets/logo.svg" alt="Logo C Gestiona" />
+            </a>
           </div>
           <!-- NAV UL -->
           <div class="nav-ul hidden lg:block">
@@ -164,14 +166,16 @@
       </nav>
       <!-- HEADER -->
       <div
-        class="header pb-16 flex flex-col justify-center items-center"
+        class="header pb-16 flex flex-col justify-center items-center lg:flex-row"
         id="inicio"
       >
-        <div class="header-information container px-4 mx-auto text-center">
-          <h1 class="text-2xl font-bold my-3">
+        <div
+          class="header-information container px-4 sm:max-w-md xl:max-w-xl mx-auto text-center"
+        >
+          <h1 class="text-2xl sm:text-3xl xl:text-5xl font-bold my-3">
             DECLARACIÓN RENTA ANUAL Y LA REVISIÓN DE LA DJ ANUAL 2022
           </h1>
-          <ul>
+          <ul class="sm:text-lg lg:text-xl">
             <li>
               <span>1.</span> Declara tu impuesto anual de manera confiable.
             </li>
@@ -179,7 +183,9 @@
             <li><span>3.</span> Evita las contingencias tributarias</li>
           </ul>
         </div>
-        <div class="header-form container px-4 mx-auto mt-6">
+        <div
+          class="header-form container px-4 sm:max-w-md xl:max-w-lg mx-auto mt-6"
+        >
           <form action="#">
             <h1 class="text-center text-md font-medium">
               SOLICITA MÁS INFORMACIÓN
@@ -232,15 +238,19 @@
     </header>
     <main>
       <!-- SERVICIO -->
-      <section class="servicio my-16" id="servicio">
+      <section class="servicio my-16 container mx-auto" id="servicio">
         <h1 class="text-3xl text-center px-4 font-bold mb-6">
           Nuestro Servicio
         </h1>
-        <div class="flex flex-col gap-6 px-4">
-          <div class="servicio-img">
-            <img src="./assets/img/servicio.jpeg" alt="" />
+        <div class="flex flex-col lg:flex-row gap-6 px-4 lg:items-center">
+          <div class="servicio-img lg:w-2/4">
+            <img
+              class="sm:max-w-2xl lg:w-full sm:mx-auto"
+              src="./assets/img/servicio.jpeg"
+              alt=""
+            />
           </div>
-          <div class="servicio-information">
+          <div class="servicio-information sm:max-w-2xl sm:mx-auto lg:w-2/4">
             <h1 class="text-xl font-medium mb-3">Declaración de Renta Anual</h1>
             <p>
               Nuestro servicio le permite poder cumplir la obligación fiscal de
@@ -269,13 +279,17 @@
         </div>
       </section>
       <!-- REQUISITOS -->
-      <section class="requisitos my-16" id="requisitos">
+      <section class="requisitos my-16 container mx-auto" id="requisitos">
         <h1 class="text-3xl text-center px-4 font-bold mb-6">Requisitos</h1>
-        <div class="flex flex-col gap-6">
-          <div class="requisitos-img">
-            <img src="./assets/img/requisito.jpeg" alt="" />
+        <div
+          class="flex flex-col lg:flex-row-reverse gap-6 lg:gap-0 lg:items-center"
+        >
+          <div class="requisitos-img lg:w-2/4">
+            <img class="lg:w-full" src="./assets/img/requisito.jpeg" alt="" />
           </div>
-          <div class="requisitos-information px-4">
+          <div
+            class="requisitos-information px-4 lg:px-6 sm:max-w-2xl sm:mx-auto lg:w-2/4"
+          >
             <h1 class="text-xl font-medium">
               Requisitos para un buen cierre fiscal:
             </h1>
@@ -384,13 +398,15 @@
         </div>
       </section>
       <!-- BENEFICIOS -->
-      <section class="beneficios my-16" id="beneficios">
+      <section class="beneficios my-16 container mx-auto" id="beneficios">
         <h1 class="text-3xl text-center px-4 font-bold mb-6">Beneficios</h1>
-        <div class="flex flex-col gap-6">
-          <div class="requisitos-img">
-            <img src="./assets/img/beneficio.jpeg" alt="" />
+        <div class="flex flex-col lg:flex-row gap-6 lg:gap-0 lg:items-center">
+          <div class="requisitos-img lg:w-2/4">
+            <img class="w-full" src="./assets/img/beneficio.jpeg" alt="" />
           </div>
-          <div class="requisitos-information px-4">
+          <div
+            class="requisitos-information px-6 sm:max-w-2xl sm:mx-auto lg:w-2/4"
+          >
             <h1 class="text-xl font-medium">
               Beneficios de una revisión de la declaración fiscal anual:
             </h1>
@@ -408,22 +424,26 @@
         </div>
       </section>
       <!-- PARALLAX 1 -->
-      <section class="parallax py-16 text-center">
-        <p class="text-xl">
-          Enfócate en tu negocio, nosotros nos encargamos de tus obligaciones
-          tributarias y laborales.
-        </p>
-        <a href="#contacto">
-          <button>Solicitar información</button>
-        </a>
+      <section class="parallax py-16 xl:py-32 text-center">
+        <div class="sm:max-w-2xl sm:mx-auto">
+          <p class="text-xl lg:text-2xl xl:text-3xl">
+            Enfócate en tu negocio, nosotros nos encargamos de tus obligaciones
+            tributarias y laborales.
+          </p>
+          <a href="#contacto">
+            <button class="lg:text-xl">Solicitar información</button>
+          </a>
+        </div>
       </section>
       <!-- OTROS SERVICIOS -->
       <section class="otrosServicios mb-16 background-plomo" id="beneficios">
         <h1 class="text-3xl text-center px-4 font-bold mb-8 pt-12">
           Otros Servicios
         </h1>
-        <div class="flex flex-col gap-6">
-          <div class="otrosServicios-1">
+        <div
+          class="flex flex-col gap-6 pb-8 lg:flex-row lg:justify-around container mx-auto"
+        >
+          <div class="otrosServicios-1 sm:max-w-2xl sm:mx-auto lg:w-2/6">
             <div class="otrosServicios-1-icon">
               <img
                 class="w-32 mx-auto"
@@ -435,15 +455,18 @@
               <h3 class="text-xl font-medium mb-3">
                 Outsourcing Contable y Tributario
               </h3>
-              <p>
+              <p class="lg:hidden">
                 Nuestro servicio le permite tener su contabilidad organizada y
                 actualizada mes a mes, un seguimiento y control sobre las
                 declaraciones juradas mitigará el riesgo de posibles
                 contingencias tributarias.
               </p>
+              <a class="hidden lg:inline-block -mt-3" href="#contacto">
+                <button>Ver más</button>
+              </a>
             </div>
           </div>
-          <div class="otrosServicios-1">
+          <div class="otrosServicios-1 sm:max-w-2xl sm:mx-auto lg:w-2/6">
             <div class="otrosServicios-1-icon">
               <img
                 class="w-32 mx-auto"
@@ -453,14 +476,17 @@
             </div>
             <div class="otrosServicios-1-text py-6 px-4 text-center">
               <h3 class="text-xl font-medium mb-3">Outsourcing de Planillas</h3>
-              <p>
+              <p class="lg:hidden">
                 El Outsourcing de Planillas le permite reducir costos
                 operativos, además de poder direccionar sus recursos internos y
                 enfocarse en el core business de su negocio.
               </p>
+              <a class="hidden lg:inline-block -mt-3" href="#contacto">
+                <button>Ver más</button>
+              </a>
             </div>
           </div>
-          <div class="otrosServicios-1">
+          <div class="otrosServicios-1 sm:max-w-2xl sm:mx-auto lg:w-2/6">
             <div class="otrosServicios-1-icon">
               <img
                 class="w-32 mx-auto"
@@ -470,17 +496,22 @@
             </div>
             <div class="otrosServicios-1-text py-6 px-4 text-center">
               <h3 class="text-xl font-medium mb-3">Servicios Legales</h3>
-              <p>
+              <p class="lg:hidden">
                 Los servicios legales que ofrecemos están ligados al ámbito
                 empresarial, con el objetivo de comprender la situación legal en
                 determinadas áreas del derecho.
               </p>
+              <a class="hidden lg:inline-block -mt-3" href="#contacto">
+                <button>Ver más</button>
+              </a>
             </div>
           </div>
         </div>
       </section>
       <!-- POR QUÉ ELEGIRNOS -->
-      <section class="elegirnos mb-16 text-center px-4">
+      <section
+        class="elegirnos mb-16 text-center px-4 sm:max-w-2xl xl:max-w-6xl sm:mx-auto"
+      >
         <div class="titulo-subrayado text-center">
           <p>c gestiona</p>
         </div>
@@ -498,14 +529,16 @@
         </a>
       </section>
       <!-- TESTIMONIOS -->
-      <section class="testimonios mb-16 text-center px-4">
+      <section class="testimonios mb-16 text-center px-4 container mx-auto">
         <div class="titulo-subrayado text-center">
           <p>testimonios</p>
         </div>
         <h1 class="text-3xl text-center font-bold mb-8">
           Ellos confían en nosotros
         </h1>
-        <div class="flex flex-wrap gap-12 items-center justify-center mb-8">
+        <div
+          class="flex flex-wrap gap-12 sm:gap-16 items-center justify-center mb-8"
+        >
           <div>
             <img
               class="w-32 mx-auto"
@@ -589,32 +622,36 @@
         </a>
       </section>
       <!-- PARALLAX 2 -->
-      <section class="parallax parallax2 py-16 text-center">
-        <p class="text-xl">
-          Te asesoramos en la apertura de tu cuenta bancaria y te brindamos 3
-          declaraciones mensuales gratis.
-        </p>
-        <a href="#contacto">
-          <button>Solicitar información</button>
-        </a>
+      <section class="parallax parallax2 py-16 text-center xl:py-32">
+        <div class="sm:max-w-2xl sm:mx-auto">
+          <p class="text-xl lg:text-2xl xl:text-3xl">
+            Te asesoramos en la apertura de tu cuenta bancaria y te brindamos 3
+            declaraciones mensuales gratis.
+          </p>
+          <a href="#contacto">
+            <button class="text-xl">Solicitar información</button>
+          </a>
+        </div>
       </section>
       <!-- CONTACTANOS -->
-      <section class="contactanos my-16 text-center px-4" id="contacto">
+      <section class="contactanos my-16 text-center px-4 container mx-auto">
         <div class="titulo-subrayado text-center">
           <p>contáctanos</p>
         </div>
         <h1 class="text-3xl text-center font-bold mb-8">
           ¿En dónde puedes encontrarnos?
         </h1>
-        <div class="flex flex-col gap-8">
-          <div>
+        <div
+          class="flex flex-col sm:flex-row sm:flex-wrap sm:items-center sm:justify-center gap-8 lg:items-start"
+        >
+          <div class="sm:w-64 lg:w-56">
             <img class="mx-auto w-14" src="./assets/icons/map-pin.svg" alt="" />
             <h3 class="text-xl font-medium">Dirección</h3>
             <p>
               C.C. Plaza San Miguel, 5to piso Av. La Marina 2000, Lima - Perú
             </p>
           </div>
-          <div>
+          <div class="sm:w-64 lg:w-56">
             <img
               class="mx-auto w-14"
               src="./assets/icons/phone-call.svg"
@@ -623,12 +660,12 @@
             <h3 class="text-xl font-medium">Teléfono</h3>
             <p>+51 934 483 265</p>
           </div>
-          <div>
+          <div class="sm:w-64 lg:w-56">
             <img class="mx-auto w-14" src="./assets/icons/mail.svg" alt="" />
             <h3 class="text-xl font-medium">Email</h3>
             <p>contacto@cgestiona.com</p>
           </div>
-          <div>
+          <div class="sm:w-64 lg:w-56">
             <img
               class="mx-auto w-14"
               src="./assets/icons/clock-check.svg"
@@ -651,8 +688,13 @@
         </div>
       </section>
       <!-- PARALLAX 3 -->
-      <section class="parallax parallax3 py-16 text-center">
-        <div class="header-form contacto container px-4 mx-auto">
+      <section
+        class="parallax parallax3 py-16 xl:py-32 text-center"
+        id="contacto"
+      >
+        <div
+          class="header-form contacto container px-4 sm:max-w-md lg:sm:max-w-xl mx-auto"
+        >
           <form action="#">
             <h1 class="text-center text-md font-medium">
               SOLICITA MÁS INFORMACIÓN
@@ -681,20 +723,70 @@
         </div>
       </section>
     </main>
-    <footer class="flex flex-col py-8 px-4 gap-8 background-plomo">
+    <footer
+      class="flex flex-col sm:flex-row sm:justify-between sm:items-center py-8 px-4 gap-8 background-plomo sm:px-16 2xl:px-32"
+    >
       <div>
-        <img class="w-32 mx-auto" src="./assets/logo.svg" alt="" />
+        <a href="#inicio">
+          <img class="w-32 mx-auto" src="./assets/logo.svg" alt="" />
+        </a>
       </div>
-      <div>
-        <ul class="flex flex-col items-center gap-4">
+      <div class="nav-ul">
+        <ul class="flex flex-col sm:flex-row items-center gap-4">
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#servicio">Servicio</a></li>
           <li><a href="#requisitos">Requisitos</a></li>
           <li><a href="#beneficios">Beneficios</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
+        <div class="items-center gap-4 justify-end mt-2 hidden sm:flex">
+          <a target="_blank" href="https://www.instagram.com/cgestionaa/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-instagram"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+              />
+              <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              <path d="M16.5 7.5l0 .01" />
+            </svg>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/@cgestiona8447/videos"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-youtube"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
+              />
+              <path d="M10 9l5 3l-5 3z" />
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="flex items-center gap-4 justify-center">
+      <div class="flex items-center gap-4 justify-center sm:hidden">
         <a target="_blank" href="https://www.instagram.com/cgestionaa/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -743,4 +835,15 @@
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./js/menu-mobile.js"></script>
+  <script>
+    ScrollReveal().reveal(".servicio", { delay: 500 });
+    ScrollReveal().reveal(".requisitos", { delay: 500 });
+    ScrollReveal().reveal(".beneficios", { delay: 500 });
+    ScrollReveal().reveal(".parallax", { delay: 500 });
+    ScrollReveal().reveal(".otrosServicios", { delay: 500 });
+    ScrollReveal().reveal(".testimonios", { delay: 500 });
+    ScrollReveal().reveal(".parallax2", { delay: 500 });
+    ScrollReveal().reveal(".contactanos", { delay: 500 });
+    ScrollReveal().reveal(".parallax3", { delay: 500 });
+  </script>
 </html>

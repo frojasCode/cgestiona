@@ -205,8 +205,8 @@ section button{
     background-image: url('./assets/img/parallax2.jpg');
 }
 
-.parallax2::before{
-    background-color: rgba(0,0,0, .7);
+.parallax3{
+    background-image: url('./assets/img/parallax3.jpg');
 }
 
 .parallax::before{
@@ -216,7 +216,7 @@ section button{
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0, .8);
+    background-color: rgba(0,0,0, .6);
     z-index: 1;
 }
 
@@ -259,4 +259,18 @@ section button{
     color: var(--white);
     height: 100%;
     width: 100%;
+}
+
+.otrosServicios-1{
+    position: relative;
+}
+
+.nav-ul a{
+    transition: all .2s ease-in-out;
+    border-bottom: 1px solid var(--white);
+}
+
+.nav-ul a:hover{
+    font-weight: 600;
+    border-bottom: 1px solid var(--celeste);
 }
