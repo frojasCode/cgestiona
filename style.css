@@ -275,3 +275,44 @@ section button{
     font-weight: 600;
     border-bottom: 1px solid var(--celeste);
 }
+
+.testimonio{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--white);
+    padding: 0 16px;
+}
+
+.overlay .texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.overlay .texto p{
+    font-style: italic;
+    line-height: 16px;
+}
+
+.overlay .texto h3{
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.testimonio:hover .overlay{
+    opacity: 1;
+}
